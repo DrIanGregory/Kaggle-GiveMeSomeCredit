@@ -108,7 +108,6 @@ Given from 150,000 sample a population estimation of credit default is 6.7%. If 
 A model used in this anlaysis can be used in an online credit-line approval process as well as provided to product and client relationship managers to detect ongoing potential credit threats.  
 Complex implementation such as those involving stacking with Deep Leariing models require time for hyperparameter tuning. Further, the production implmentation of these models do somewhat step away from an intuitive approach of regression models such as Logistic regression.
 
-
 <h3>Future Analysis</h3>
 The extreme examples may be the ones which default more and this extreme distribution may be worth estimating separately to the rest of the distributions. Traditionally, Ensemble techniques win Kaggle competitions. This includes ideas such as Stacking. 
 These techniques require Hyper-parameter tuning which can occupy considerable time and was out-of-scope for this exercise for me. But could be something to consider in the future.
