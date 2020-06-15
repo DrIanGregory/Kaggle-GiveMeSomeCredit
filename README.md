@@ -1,4 +1,4 @@
-<h2>Kaggle-GiveMeSomeCredit</h2>
+<center><h2>Kaggle DataSet - Give Me Some Credit</h2></center>
 <h3>Description:</h3>
 A brief look at the Give Me Some Credit dataset from Kaggle. 
 Incorrect data was imputed and outliers removed. Subsequently a 2-fold cross validation was applied and various models were fitted such as Logistic Regression, Random Forest, XGBoost. Further an Ensemble and Stacking was tried.
@@ -23,7 +23,7 @@ There are 11 bits of historical data with about 250,000 anonymous borrower infor
  <tr><td>NumberOfDependents</td><td>Number of dependents in family excluding themselves (spouse, children etc.).</td><td>integer</td></tr>
 </tbody></table>
 
-Since the class labels are provided for the sole response variable SeriousDlqin2yrs taking values 0 (NO default) or 1 (default). Supervised Learning classification models are a natural initial approach such as logistic regression as the base model and to improve with an ensemble of two-class boosted decision tree and stacking techniques involving Neural Networks.
+Since the class labels are provided for the sole response variable <strong>SeriousDlqin2yrs</strong> taking values 0 (NO default) or 1 (default). Supervised Learning classification models are a natural initial approach such as logistic regression as the base model and to improve with an ensemble of two-class boosted decision tree and stacking techniques involving Neural Networks.
 
 
 <h3>Exploratory Data Analysis</h3>
@@ -44,16 +44,16 @@ Summary descriptive statistics of the features.
 
 To examine feature reduction, the following showsn a correlation heatmap of the original data. Red implies values are correlated.
 
-<figure style="float:left">
-	<img src="images/give_me_some_credit_correlation_heatmap_original_data.png" alt="" width="45%">
+<figure style="float:center">
+	<img src="images/give_me_some_credit_correlation_heatmap_original_data.png" alt="" width="75%">
 </figure>
 <div style="clear:both">
 				
 				
 The variable <strong>SeriousDlqin2yrs</strong> is labelled either 0's and 1's with no other values. The class imbalance is 6.7% (ratio of 1:14) as shown be the following pie chart. As this dominance of 0's could dominate the prediction. Replicating the number of 1's 14 times was also tried to determine if evening the dataset provided some value.
 
-<figure style="float:left">
-	<img src="images/give_me_some_credit_SeriousDlqin2yrs_pie_chart.png" alt="" width="40%">	
+<figure style="float:center">
+	<img src="images/give_me_some_credit_SeriousDlqin2yrs_pie_chart.png" alt="" width="44%">	
 </figure>
 <div style="clear:both">
 
@@ -61,17 +61,17 @@ The variable <strong>SeriousDlqin2yrs</strong> is labelled either 0's and 1's wi
 For the variables "NumberOfTime30-59DaysPastDueNotWorse", two years divided into 60 day increments suggests a maximum value of about 12-24 and this is what the data set exhibits except for a cluter of points at the values of 96 and 98. These are either strange mistakes or possibly values specific to the dataset with some other meaning such as 'unknown'. Further, the variables "NumberOfTimes90DaysLate" and "NumberOfTime60-89DaysPastDueNotWorse" also contained these 96 and 98 pillars of data which showed up on correlation between the three variables. To accomodate for this, the values were considered to be Winsorized to the previous largest value but the median value was chosen with the aim to have less impact over the sample distribution.
 After altering the values for 96 and 98. The significant inter-correlation variables "NumberOfTime30-59DaysPastDueNotWorse", "NumberOfTimes90DaysLate" and "NumberOfTime60-89DaysPastDueNotWorse" drops away.
 
-<figure style="float:left">
-	<img src="images/give_me_some_credit_correlation_heatmap_96_and_98_adjusted_data.png" alt="" width="45%">	
+<figure style="float:center">
+	<img src="images/give_me_some_credit_correlation_heatmap_96_and_98_adjusted_data.png" alt="" width="75%">	
 </figure>
 <div style="clear:both">
 
 The feature <strong>MonthlyIncome</strong> has 29,731 missing values or 19.8% of 150,000 examples with the belly of the distribution around 5,000 and a long right-tail.
 
-	<figure style="float:left">
-		<img src="images/give_me_some_credit_distribution_of_monthly_salary.png" alt="" width="45%">					
-	</figure>
-	<div style="clear:both">
+<figure style="float:center">
+	<img src="images/give_me_some_credit_distribution_of_monthly_salary.png" alt="" width="45%">					
+</figure>
+<div style="clear:both">
 				
 NumberOfDependents had 3924	missing values or 2.6% of the dataset. These values were set to zero. There is a jump from 6 to 20 dependents with 244 examples in that 99.9% percentile bin. All values were nominal whole numbers such that there were no fraction of a dependent.
 
@@ -79,10 +79,10 @@ NumberOfDependents had 3924	missing values or 2.6% of the dataset. These values 
 <h3>Model Estimations</h3>
 Split the training data into 2-fold Cross Validation with 75% random samples in training the remaining for validation/test. Logistic regression can be considered the base model to compare others to. Out-of-sample fit on unseen data gave an AUC of 0.8117. With the following ROC curve.
 
-	<figure style="float:left">
-		<img src="images/give_me_some_credit_fit_logistic_regression.png" alt="" width="45%">					
-	</figure>
-	<div style="clear:both">
+<figure style="float:center">
+	<img src="images/give_me_some_credit_fit_logistic_regression.png" alt="" width="45%">					
+</figure>
+<div style="clear:both">
 
 
 
