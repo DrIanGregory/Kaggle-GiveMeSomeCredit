@@ -8,23 +8,6 @@ Incorrect data was imputed and outliers removed. Subsequently a 2-fold cross val
 The 3 month long contest from Kaggle called <a href="https://www.kaggle.com/c/GiveMeSomeCredit/overview/description">Give Me Some Credit (GMSC)</a> involves predicting the probability that a person within 2 years did not repay an installment paying in 90 days or more beyond the due date. 
 There are 11 bits of historical data with about 250,000 anonymous borrower information occupying 15MB and 5MB compressed hard drive space. The dataset is split into 150,000 examples (labeled training set - with 10,026 positive and 139,974 negative elements) and testing rows of 101,503. The following table summarises the numeric dataset with one predictor variable called <em>SeriousDlqin2yrs</em> and 10 explanatory variables (features).
         
-<style type="text/css">
-	table.tableizer-table {
-		font-size: 12px;
-		border: 1px solid #CCC; 
-		font-family: Arial, Helvetica, sans-serif;
-	} 
-	.tableizer-table td {
-		padding: 4px;
-		margin: 3px;
-		border: 1px solid #CCC;
-	}
-	.tableizer-table th {
-		background-color: #104E8B; 
-		color: #FFF;
-		font-weight: bold;
-	}
-</style>
 <table class="tableizer-table">
 <thead><tr class="tableizer-firstrow"><th>Variable Name</th><th>Description</th><th>Data Type</th></tr></thead><tbody>
  <tr><td>SeriousDlqin2yrs</td><td>Person experienced 90 days past due delinquency or worse.</td><td>Y/N</td></tr>
@@ -43,9 +26,14 @@ There are 11 bits of historical data with about 250,000 anonymous borrower infor
 Since the class labels are provided for the sole response variable SeriousDlqin2yrs taking values 0 (NO default) or 1 (default). Supervised Learning classification models are a natural initial approach such as logistic regression as the base model and to improve with an ensemble of two-class boosted decision tree and stacking techniques involving Neural Networks.
 
 
+<h3>Exploratory Data Analysis</h3>
+The variable "SeriousDlqin2yrs" is labelled either 0's and 1's with no other values. The class imbalance is 6.7% (ratio of 1:14) as shown be the following pie chart. As this dominance of 0's could dominate the prediction. Replicating the number of 1's 14 times was also tried to determine if evening the dataset provided some value.
 
-<thead><tr class="tableizer-firstrow"><th></th></tr>
-</tbody></table>
+<figure style="float:left">
+	<img src="images/give_me_some_credit_SeriousDlqin2yrs_pie_chart.png" alt="" width="100%">
+	<figcaption>Distribution of feature SeriousDlqin2yrs.</figcaption>
+</figure>
+<div style="clear:both">
 
 
 
