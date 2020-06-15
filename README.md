@@ -76,6 +76,7 @@ The feature <strong>MonthlyIncome</strong> has 29,731 missing values or 19.8% of
 <strong>NumberOfDependents</strong> had 3924	missing values or 2.6% of the dataset. These values were set to zero. There is a jump from 6 to 20 dependents with 244 examples in that 99.9% percentile bin. All values were nominal whole numbers such that there were no fraction of a dependent.
 
 
+
 <h3>Model Estimations</h3>
 <p>
 	Split the training data into 2-fold Cross Validation with 75% random samples in training the remaining for validation/test. <strong>Logistic regression</strong> can be considered the base model to compare others to. Out-of-sample fit on unseen data gave an AUC of 0.8117. With the following ROC curve.
@@ -97,8 +98,8 @@ The important features according to the Logistic model are shown in the followin
 
 The <strong><a href="https://xgboost.ai/">XGBoost</a></strong> estimation provided an improvement over Logistic regression, AdaBoost and standard tree. Generating an AUC of 0.86146 and resulting in the following AUC curve. 
 
-<figure style="float:display:block; margin-left: auto; margin-right: auto;">
-	<img src="images/boosting give_me_some_credit_fit_xgboost.png" alt="" width="65%">
+<figure>
+	<img src="images/give_me_some_credit_fit_xgboost.png" alt="" width="65%">
 </figure>
 <div style="clear:both">
 
