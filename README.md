@@ -5,7 +5,7 @@ Incorrect data was imputed and outliers removed. Subsequently a 2-fold cross val
 
 
 <h3 id="System Objective">Introduction</h3>
-The 3 month long contest from Kaggle called <a href="https://www.kaggle.com/c/GiveMeSomeCredit/overview/description">Give Me Some Credit (GMSC)</a> involves predicting the probability that a person within 2 years did not repay an installment paying in 90 days or more beyond the due date. 
+The 3 month long contest in 2011 from Kaggle called <a href="https://www.kaggle.com/c/GiveMeSomeCredit/overview/description">Give Me Some Credit (GMSC)</a> involves predicting the probability that a person within 2 years did not repay an installment paying in 90 days or more beyond the due date. 
 There are 11 bits of historical data with about 250,000 anonymous borrower information occupying 15MB and 5MB compressed hard drive space. The dataset is split into 150,000 examples (labeled training set - with 10,026 positive and 139,974 negative elements) and testing rows of 101,503. The following table summarises the numeric dataset with one predictor variable called <em>SeriousDlqin2yrs</em> and 10 explanatory variables (features).
         
 <table>
