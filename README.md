@@ -78,7 +78,7 @@ The feature <strong>MonthlyIncome</strong> has 29,731 missing values or 19.8% of
 
 <h3>Model Estimations</h3>
 <p>
-	Split the training data into 2-fold Cross Validation with 75% random samples in training the remaining for validation/test. Logistic regression can be considered the base model to compare others to. Out-of-sample fit on unseen data gave an AUC of 0.8117. With the following ROC curve.
+	Split the training data into 2-fold Cross Validation with 75% random samples in training the remaining for validation/test. <strong>Logistic regression</strong> can be considered the base model to compare others to. Out-of-sample fit on unseen data gave an AUC of 0.8117. With the following ROC curve.
 </p>
 <br>
 <p align="center">
@@ -95,7 +95,7 @@ The important features according to the Logistic model are shown in the followin
 </figure>
 <div style="clear:both">
 
-The XGBoost estimation provided an improvement over Logistic regression, AdaBoost and standard tree. Generating an AUC of 0.86146 and resulting in the following AUC curve. 
+The <strong><a href="https://xgboost.ai/">XGBoost</a></strong> estimation provided an improvement over Logistic regression, AdaBoost and standard tree. Generating an AUC of 0.86146 and resulting in the following AUC curve. 
 
 <figure style="float:display:block; margin-left: auto; margin-right: auto;">
 	<img src="images/boosting give_me_some_credit_fit_xgboost.png" alt="" width="65%">
