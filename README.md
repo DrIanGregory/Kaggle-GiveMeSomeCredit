@@ -50,7 +50,8 @@ To examine feature reduction, the following showsn a correlation heatmap of the 
 <div style="clear:both">
 				
 				
-The variable <strong>SeriousDlqin2yrs</strong> is labelled either 0's and 1's with no other values. The class imbalance is 6.7% (ratio of 1:14) as shown be the following pie chart. As this dominance of 0's could dominate the prediction. Replicating the number of 1's 14 times was also tried to determine if evening the dataset provided some value.
+The variable <strong>SeriousDlqin2yrs</strong> is labelled either 0's and 1's with no other values. The class imbalance is 6.7% (ratio of 1:14) as shown be the following pie chart. As this majority class of 0's could dominate the prediction. Replicating the minority class of 1's, 14 times was also tried to determine if evening the dataset provided some value.
+Further downsampling and upsampling of the dominant class was tried.
 
 <figure style="float:display:block; margin-left: auto; margin-right: auto;">
 	<img src="images/give_me_some_credit_SeriousDlqin2yrs_pie_chart.png" alt="" width="44%">	
