@@ -73,7 +73,7 @@ The feature <strong>MonthlyIncome</strong> has 29,731 missing values or 19.8% of
 </figure>
 <div style="clear:both">
 				
-<strong>NumberOfDependents</strong> had 3924	missing values or 2.6% of the dataset. These values were set to zero. There is a jump from 6 to 20 dependents with 244 examples in that 99.9% percentile bin. All values were nominal whole numbers such that there were no fraction of a dependent.
+<strong>NumberOfDependents</strong> had 3924 missing values or 2.6% of the dataset. These values were set to zero. There is a jump from 6 to 20 dependents with 244 examples in that 99.9% percentile bin. All values were nominal whole numbers such that there were no fraction of a dependent.
 
 
 
@@ -99,7 +99,7 @@ The important features according to the Logistic model are shown in the followin
 The <strong><a href="https://xgboost.ai/">XGBoost</a></strong> estimation provided an improvement over Logistic regression, AdaBoost and standard tree. Generating an AUC of 0.86146 and resulting in the following AUC curve. 
 
 <figure>
-	<img src="images/give_me_some_credit_fit_xgboost.png" alt="" width="65%">
+	<img src="images/give_me_some_credit_fit_xgboost.png" alt="" width="40%">
 </figure>
 <div style="clear:both">
 
