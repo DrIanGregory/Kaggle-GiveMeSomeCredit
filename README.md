@@ -99,7 +99,7 @@ The important features according to the Logistic model are shown in the followin
 The <strong><a href="https://xgboost.ai/">XGBoost</a></strong> estimation provided an improvement over Logistic regression, AdaBoost and standard tree. Generating an AUC of 0.86146 and resulting in the following AUC curve. 
 
 <figure>
-	<img src="images/give_me_some_credit_fit_xgboost.png" alt="" width="40%">
+	<img src="images/give_me_some_credit_fit_xgboost.png" alt="" width="45%">
 </figure>
 <div style="clear:both">
 
