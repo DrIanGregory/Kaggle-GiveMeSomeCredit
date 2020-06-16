@@ -103,8 +103,23 @@ The <strong><a href="https://xgboost.ai/">XGBoost</a></strong> estimation provid
 </figure>
 <div style="clear:both">
 
+Summary table of models fitted with AUC for their out-of-sample performance on the 2-fold cross validation data. 
+
+<table>
+<thead><tr><th>Model</th><th>AUC - Training</th><th>AUC - Validation</th></tr></thead><tbody>
+ <tr><td>Logistic Regression</td><td>0.8161</td><td>0.8161</td></tr>
+ <tr><td>Decision Tree</td><td>0.61</td><td>0.601</td></tr>
+ <tr><td>Random Forest</td><td>0.8628</td><td>0.862</td></tr>
+ <tr><td>Gradient Boosting</td><td>0.8628</td><td>0.861</td></tr>
+ <tr><td>XGBoost</td><td>0.878</td><td>0.8615</td></tr>
+ <tr><td>Ensemble</td><td>0.8316</td><td>&nbsp;</td></tr>
+ <tr><td>Stacking </td><td>0.6462</td><td></td></tr>
+</tbody></table>
+
+
 
 <h3>Conclusions</h3>
+XGBoost seems to perform quite well out of the box as well as Random Forest. It could make sense to further investigate combining these model powers in a well tuned ensemble or stacking method and even further the impact of a deep learning algorithm.
 Given from 150,000 sample a population estimation of credit default is 6.7%. If the average loan size is US$1,000 per customer. Per 100,000 customers, assuming the amount if fully unrecoverable this can equate to a full potential loss of US$6.7mn. Being able to predict from the onset and existing customers default probabilities accurately clearly directly impact a loan firms bottom line. Even a 50% increase in default estimation efficiency from 6.7% to 3.35% results in a US$3.35mn loss. The implementation is more likely to be on reduction of loan amount size depending on probability of default. As not to turn customers away. Further, can generate revenues before a default occurs.<br>
 A model used in this anlaysis can be used in an online credit-line approval process as well as provided to product and client relationship managers to detect ongoing potential credit threats.  
 Complex implementation such as those involving stacking with Deep Leariing models require time for hyperparameter tuning. Further, the production implmentation of these models do somewhat step away from an intuitive approach of regression models such as Logistic regression.
