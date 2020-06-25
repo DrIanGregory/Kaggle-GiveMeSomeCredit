@@ -52,7 +52,7 @@ Summary descriptive statistics of the features.
 To examine feature reduction, the following showsn a correlation heatmap of the original data. Red implies values are correlated.
 
 <figure style="float:display:block; margin-left: auto; margin-right: auto;">
-	<img src="images/give_me_some_credit_correlation_heatmap_original_data.png" alt="" width="100%">
+	<img src="images/give_me_some_credit_correlation_heatmap_original_data.png" alt="" width="150%">
 </figure>
 <div style="clear:both">
 				
