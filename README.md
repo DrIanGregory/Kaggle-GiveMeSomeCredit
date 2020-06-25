@@ -25,6 +25,13 @@ There are 11 bits of historical data with about 250,000 anonymous borrower infor
 
 Since the class labels are provided for the sole response variable <strong>SeriousDlqin2yrs</strong> taking values 0 (NO default) or 1 (default). Supervised Learning classification models are a natural initial approach such as logistic regression as the base model and to improve with an ensemble of two-class boosted decision tree and stacking techniques involving Neural Networks.
 
+Given the nature of the problem. The following analysis approach makes sense.
+
+<figure style="float:display:block; margin-left: auto; margin-right: auto;">
+	<img src="images/data_analysis_overview.png" alt="" width="80%">
+</figure>
+<div style="clear:both">
+
 
 <h3>Exploratory Data Analysis</h3>
 
