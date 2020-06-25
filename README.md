@@ -28,9 +28,10 @@ Since the class labels are provided for the sole response variable <strong>Serio
 Given the nature of the problem. The following analysis approach makes sense.
 
 <figure style="float:display:block; margin-left: auto; margin-right: auto;">
-	<img src="images/data_analysis_overview.png" alt="" width="80%">
+	<img src="images/data_analysis_overview.png" alt="" width="100%">
 </figure>
 <div style="clear:both">
+
 
 
 <h3>Exploratory Data Analysis</h3>
@@ -52,7 +53,7 @@ Summary descriptive statistics of the features.
 To examine feature reduction, the following showsn a correlation heatmap of the original data. Red implies values are correlated.
 
 <figure style="float:display:block; margin-left: auto; margin-right: auto;">
-	<img src="images/give_me_some_credit_correlation_heatmap_original_data.png" alt="" width="150%">
+	<img src="images/give_me_some_credit_correlation_heatmap_original_data.png" alt="" width="80%">
 </figure>
 <div style="clear:both">
 				
